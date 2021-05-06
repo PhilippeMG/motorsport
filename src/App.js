@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import  sensores  from "./fichero.json"; //Lectura del fichero
+import { LineGraphics } from './LineGraphics'; //Componente grafico personalizado
+import { ColumnGraphics } from './ColumnGraphics';
 
 function App() {
+
+  const info = () => {
+    console.log('datos',sensores)   
+    };   
+      
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>UJI Motor Sport</h1>
+      {info()}
+      <h2>Temperatura Motor</h2>
+      <LineGraphics loading={false} title={'LineGraphics'} datos={sensores} x={'Time'} y={'Dato'} />
+      <ColumnGraphics loading={false} title={'ColumnGraphics'} datos={sensores} x={'Time'} y={'Dato'} />
     </div>
   );
 }

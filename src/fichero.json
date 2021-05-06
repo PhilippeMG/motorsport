@@ -1,0 +1,37 @@
+[
+    {
+      "Sensor": "Temperatura Motor",
+      "Time" : "0.0",
+      "Dato": 22
+    },
+    {
+        "Sensor": "Temperatura Motor",
+        "Time" : "1.0",
+        "Dato": 23
+      },
+      {
+        "Sensor": "Temperatura Motor",
+        "Time" : "2.0",
+        "Dato": 24
+      },
+      {
+        "Sensor": "Temperatura Motor",
+        "Time" : "2.5",
+        "Dato": 20
+      },
+      {
+        "Sensor": "Temperatura Motor",
+        "Time" : "3.0",
+        "Dato": 25
+      },
+      {
+        "Sensor": "Temperatura Motor",      
+        "Time" : "4.0",
+        "Dato": 26
+      },
+      {
+        "Sensor": "Temperatura Motor",
+        "Time" : "5.0",
+        "Dato": 29
+      }
+  ]
